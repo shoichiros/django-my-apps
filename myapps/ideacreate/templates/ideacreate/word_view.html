@@ -1,0 +1,9 @@
+{% extends 'ideacreate/base.html' %}
+
+{% block content %}
+<h1 class="font-weight-light mt-4 text-white">Create Ideas</h1>
+<p class="lead text-white-50">{{ first_list|random }}</p>
+<p class="lead text-white-50">{{ second_list|random }}</p>
+<p class="lead text-white-50">{{ third_list|random }}</p>
+<a class="btn btn-primary btn-lg" href="{%url 'wordview'%}" role="button">Start over</a>
+{% endblock %}

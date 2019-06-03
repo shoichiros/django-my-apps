@@ -1,0 +1,9 @@
+{% extends 'ideacreate/base.html' %}
+
+{% block content %}
+<form action="" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form }}
+  <button type="submit">送信</button>
+</form>
+{% endblock %}
