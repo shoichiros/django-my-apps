@@ -1,10 +1,12 @@
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from .forms import PostForm
+from .models import TaskCreate
 
 
 def task_list(request):
-    return render(request, 'taskmanage/top_page.html')
+    my_task = TaskCreate.objects.values()
+    return render(request, 'taskmanage/top_page.html', {'my_task': my_task})
 
 
 def task_create(request):

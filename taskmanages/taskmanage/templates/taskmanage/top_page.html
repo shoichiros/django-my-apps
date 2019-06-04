@@ -2,5 +2,10 @@
 
 {% block content %}
 <h1>My Task List</h1>
-
+<a href="/create">task create.</a>
+{% for task in my_task %}
+<h2>{{task.task_title }}</h2>
+<p>{{ task.task_text }}</p>
+<p>{{ task.date }}</p>
+{% endfor %}
 {% endblock %}
