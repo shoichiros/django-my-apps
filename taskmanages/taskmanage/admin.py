@@ -1,5 +1,4 @@
 from django.contrib import admin
-from .models import UserAccount, TaskCreate
+from .models import Task
 
-admin.site.register(UserAccount)
-admin.site.register(TaskCreate)
+admin.site.register(Task)
