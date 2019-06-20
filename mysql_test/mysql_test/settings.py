@@ -37,7 +37,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'mysqltest.urls'
+ROOT_URLCONF = 'mysql_test.urls'
 
 TEMPLATES = [
     {
@@ -55,7 +55,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'mysqltest.wsgi.application'
+WSGI_APPLICATION = 'mysql_test.wsgi.application'
 
 
 # Database
