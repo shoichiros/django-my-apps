@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+  {% block content %}
+  {% for datas in data %}
+    <p>{{ datas.username }}</p>
+    <p>{{ datas.my_text }}</p>
+  {% endfor %}
+  {% endblock %}
