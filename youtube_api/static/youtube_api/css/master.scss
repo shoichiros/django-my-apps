@@ -1,0 +1,132 @@
+@import "variables", "mixin", "reset";
+
+body {
+  background: $main_bg_color;
+}
+
+/* Main */
+.main_wrap {
+  width: 100%;
+  height: auto;
+}
+
+.main_container {
+  max-width: $contents_max_width;
+  margin: 0 auto 100px;
+  padding: 0 5px;
+}
+
+/* Search contents */
+.search_container {
+  @include flexAllCenter;
+  flex-direction: column;
+  height: 250px;
+  margin: 0 auto;
+
+  svg {
+    width: 200px;
+  }
+}
+
+.search_form {
+  @include flexAllCenter;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+
+  input {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .1);
+    width: 100%;
+    height: 40px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: .5s;
+
+    &:focus {
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, .2);
+    }
+  }
+
+  button {
+    background: #F50057;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    border: none;
+    color: #fafafa;
+    font-weight: 600;
+    width: 100px;
+    height: 35px;
+    transition: .5s;
+
+    &:hover {
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, .4);
+    }
+  }
+}
+
+.contents_explanation {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 0 100px;
+  width: 80%;
+  height: calc(100vh - 400px);
+  margin: 0 auto;
+
+  p {
+    margin: 20px 0;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+
+/* Main contents */
+.contents_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 5px;
+  width: 100%;
+  max-width: $contents_max_width;
+  height: auto;
+}
+
+.card_container {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+  width: 100%;
+  height: auto;
+  transition: .5s;
+
+  &:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+  }
+}
+
+.card_thumbnail {
+  width: 100%;
+  height: 250px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card_detail {
+  width: 100%;
+  height: 150px;
+  padding: 1.5em;
+}
+
+.card_title {
+  h2 {
+    font-size: 1em;
+    word-wrap: break-word;
+    overflow-y: hidden;
+
+    a {
+      color: #323232;
+    }
+  }
+}
