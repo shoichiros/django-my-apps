@@ -1,0 +1,31 @@
+{% extends 'accounts/accounts_base.html' %}
+
+{% block title %}Login | {% endblock %}
+
+
+{% block content %}
+  <h1 class="top-title">Login</h1>
+
+  {% if messages %}
+  <ul class="error-messages">
+    {% for message in messages %}
+    <li {% if message.error %} class="{{ message.error }}" {% endif %}>{{ message }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <!-- Main form start -->
+  <form class="account-form" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">ログイン</button>
+  </form>
+  <!-- Main form end -->
+
+  <div class="password-forget-links">
+    <a href="#">パスワードをお忘れですか？</a>
+  </div>
+  <div class="signup">
+    <a href="{% url 'signup' %}">新規登録</a>
+  </div>
+{% endblock %}

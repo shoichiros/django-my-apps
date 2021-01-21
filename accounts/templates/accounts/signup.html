@@ -1,0 +1,29 @@
+{% extends 'accounts/accounts_base.html' %}
+
+{% block title %}Signup | {% endblock %}
+
+
+{% block content %}
+  <h1 class="top-title">Signup</h1>
+
+  <!-- Main form content start -->
+  <form class="account-form" method="post">
+    {% csrf_token %}
+    {{ form.username }}
+    {{ form.password1 }}
+    {{ form.password2 }}
+    <div class="privacy-policy">
+      {{ form.privacy_check }}
+      <p class="privacy">
+        <a class="privacy-check" href="{% url 'privacy_policy' %}" target='_blank' rel='noopener noreferrer'>プライバシーポリシー</a>
+        に同意する
+      </p>
+    </div>
+    <button type="submit">登録</button>
+  </form>
+  <!-- Main form content end -->
+
+  <div class="return-link">
+    <a href="{% url 'login' %}">戻る</a>
+  </div>
+{% endblock %}

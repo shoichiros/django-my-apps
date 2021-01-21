@@ -1,0 +1,10 @@
+{% extends 'accounts/accounts_base.html' %}
+
+{% block title %}Logout | {% endblock %}
+
+
+{% block content %}
+  <h1 class="top-title">Logout successfully</h1>
+  <p>ログアウトしました。</p>
+  <a href="{% url 'home' %}">戻る</a>
+{% endblock %}

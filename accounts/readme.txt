@@ -1,0 +1,1 @@
+﻿Required, Add AUTH_USER_MODEL = 'accounts.CustomUser' in settings.py

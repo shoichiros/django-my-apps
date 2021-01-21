@@ -1,0 +1,149 @@
+* {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/account-page.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 0 0;
+}
+
+input,
+button {
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+input::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+button {
+  cursor: pointer;
+}
+
+input:focus {
+  border: 1px solid #05b0c9;
+}
+
+.account-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 250px;
+  height: auto;
+}
+
+.top-title {
+  margin: 0 0 10px;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.error-messages {
+  color: #eb0000;
+  font-size: 14px;
+}
+
+.password-forget-links {
+  margin: 5px 0 10px;
+}
+
+.password-forget-links a {
+  color: #999;
+  font-size: 14px;
+  text-decoration: none;
+  transition: .8s;
+}
+
+.password-forget-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.signup {
+  margin: 5px 0 0;
+}
+
+.signup a {
+  color: #aaa;
+  transition: .8s;
+}
+
+.signup a:hover {
+  color: #fff;
+}
+
+.privacy-policy {
+  margin: 5px 0 0;
+}
+
+.privacy-policy p {
+  display: inline-block;
+}
+
+.privacy-policy a {
+  text-decoration: underline;
+}
+
+.privacy {
+  color: #fafafa;
+  font-size: 13px;
+}
+
+.return-link {
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+
+.return-link a {
+  color: #aaa;
+  transition: .8s;
+}
+
+.return-link a:hover {
+  color: #fff;
+}
+
+.footer {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer p {
+  text-align: center;
+  font-size: 12px;
+}

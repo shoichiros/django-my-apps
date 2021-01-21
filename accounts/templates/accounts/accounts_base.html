@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="{% static 'accounts/css/master.css' %}">
+  <title>{% block title %}{% endblock %}Photomeet</title>
+</head>
+
+<body>
+  <main class="account-content">
+    {% block content %}
+    {% endblock %}
+  </main>
+  <footer class="footer">
+    <p class="my-sign">Created by Shoichiro Saito.</p>
+    <p class="copylight">Copyright © 2020 Photomeet</p>
+  </footer>
+</body>
+
+</html>
